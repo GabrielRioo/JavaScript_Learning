@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+button {
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(135deg, #ffffff 60%, #8d8d8d 100%);
+    border: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    
+}
+
+button:focus{
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    
+}
+
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(135deg, #e4e4e4 60%, #818181 100%);
+}
+
+input {
+    width: 10em;
+    height: 2em;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: right;
+    border: 1px solid rgba(150, 150, 150, 0.199);
+    border-radius: 8px;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+    outline: none;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+div.border {
+    
+    border-radius: 8px;
+    padding: 20px 10px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(135deg, #7e7e7e 0%, #333333 70%);
+    box-shadow: 5px 5px 10px 2px rgb(131, 131, 131);
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    gap: 15px;
+    margin-top: 30px;
+}

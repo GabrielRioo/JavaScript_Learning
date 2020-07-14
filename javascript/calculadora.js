@@ -13,6 +13,6 @@ function calcular() {
     if (sinal == "/") result.value = val1 / val2;
 
     console.log(val1, " + ", val2, " = ", result)
-
-
 }
+
+
