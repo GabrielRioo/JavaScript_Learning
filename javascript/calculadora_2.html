@@ -9,29 +9,39 @@
 <body>
     <div class="flex">
         <div class="border">
-            <input type="text" id="tela">
-            <div class="grid">
-                <button class="numero" value="1">1</button>
-                <button class="numero" value="2" onclick="calc()">2</button>
-                <button class="numero" value="3" onclick="calc()">3</button>
-                <button class="operacao" value="+" onclick="calc()">+</button>
+            <input type="text" class="result" value="0">
+            <div class="alinhado">
+                <div class="operators">
+                    <button id="op_key" value="+"> + </button>
+                    <button id="op_key" value="-"> - </button>
+                    <button id="op_key" value="x"> x </button>
+                    <button id="op_key" value="/"> / </button>
+                </div>
     
-                <button class="numero" value="4" onclick="calc()">4</button>
-                <button class="numero" value="5" onclick="calc()">5</button>
-                <button class="numero" value="6" onclick="calc()">6</button>
-                <button class="operacao" value="-" onclick="calc()">-</button>
-    
-                <button class="numero" value="7" onclick="calc()">7</button>
-                <button class="numero" value="8" onclick="calc()">8</button>
-                <button class="numero" value="9" onclick="calc()">9</button>
-                <button class="operacao" value="*" onclick="calc()">*</button>
-    
-                <button class="numero" value="AC" onclick="calc()">AC</button>
-                <button class="numero" value="0" onclick="calc()">0</button>
-                <button class="numero" value="=" onclick="calc()">=</button>
-                <button class="operacao" value="/" onclick="calc()">/</button>
+                <div class="numbers">
+                    <button id="num_key" value="1"> 1 </button>
+                    <button id="num_key" value="2"> 2 </button>
+                    <button id="num_key" value="3"> 3 </button>
+                    
+        
+                    <button id="num_key" value="4"> 4 </button>
+                    <button id="num_key" value="5"> 5 </button>
+                    <button id="num_key" value="6"> 6 </button>
+                    
+        
+                    <button id="num_key" value="7"> 7 </button>
+                    <button id="num_key" value="8"> 8 </button>
+                    <button id="num_key" value="9"> 9 </button>
+                    
+        
+                    <button id="num_key" value="AC"> AC </button>
+                    <button id="num_key" value="0"> 0 </button>
+                    <button id="num_key" value="="> = </button>
+                    
+                </div>
             </div>
         </div>
     </div>
+    <script src="calculadora_2.js"></script>
 </body>
 </html>
