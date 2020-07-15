@@ -1,5 +1,5 @@
 function calc() {
-    let num = document.getElementsByClassName("numero").value();
+    let num = document.querySelecto("numero").value();
     let tela = document.getElementById("tela");
     let operacao = document.getElementById("operacao");
 
