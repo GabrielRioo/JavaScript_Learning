@@ -63,4 +63,14 @@
 
 
 
-https://www.youtube.com/watch?v=GqOkRvNbHeU
+// https://www.youtube.com/watch?v=GqOkRvNbHeU
+
+
+const botao = document.querySelector('button')
+
+botao.addEventListener('click', atualizaNumero);
+
+function atualizaNumero() {
+    var numero = prompt("Digite um numero: ");
+    botao.textContent =  numero;
+}
