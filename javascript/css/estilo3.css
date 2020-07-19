@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div#calculadora {
+    background-color: rgb(249, 252, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px 20px 20px;
+    border: 1px solid rgb(124, 173, 169);
+    border-radius: 8px;
+    position: relative;
+}
+
+textarea#display {
+    width: 15em;
+    height: 1.5em;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 40px;
+    text-align: right;
+    padding: 5px 20px 0 0 ;
+}
+
+div#grid {
+    display: grid;
+    grid-template-columns: 570px 50px;
+    gap: 5px;
+}
+
+button {
+    width: 5em;
+    height: 2em;
+    margin: 3px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20pt;
+}
+
+button#limpaTela {
+    background-color: rgb(189, 111, 105);
+}
+
+button#igualdade {
+    /* position: absolute; */
+    /* right: 20px; */
+    width: 2.7em;
+    height: 8.6em;
+    /* bottom: 20px; */
+    background-color: rgb(44, 83, 134);
+    
+}
