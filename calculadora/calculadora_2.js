@@ -66,11 +66,26 @@
 // https://www.youtube.com/watch?v=GqOkRvNbHeU
 
 
-const botao = document.querySelector('button')
+// const botao = document.querySelector('button')
 
-botao.addEventListener('click', atualizaNumero);
+// botao.addEventListener('click', atualizaNumero);
 
-function atualizaNumero() {
-    var numero = prompt("Digite um numero: ");
-    botao.textContent =  numero;
+// function atualizaNumero() {
+//     var numero = prompt("Digite um numero: ");
+//     botao.textContent =  numero;
+// }
+// ======================================================
+// Função: Cria um novo parágrafo e o insere no fim do arquivo HTML. 
+function criarParagrafo() {
+    var para = document.createElement('p');
+    para.textContent = 'Você clicou no botão!';
+    document.body.appendChild(para);
 }
+/*  1. Captura referências de todos os botões na página e armazena isso em um array. 
+    2. Vai até todos os botões e adiciona um event listener click a cada um deles. Quando cada botão é clicado, a função criarParagrafo() será executada. */
+const botoes = document.querySelectorAll('button');
+for (var i = 0; i < botoes.length; i++) {
+    botoes[i].addEventListener('click', criarParagrafo);
+}
+
+// ======================================================
