@@ -5,11 +5,15 @@
 `.textContent = ' ' ` - Escreve um texto <br>
 `<script src="script.js" defer></script>` - defer - renderiza o HTML sempre que o JS for atingido <br>
 O _"defer"_, funciona com **scripts externos** <br>
-O _"DOMContentLoaded_ funciona com **scripts internos** - Significa que todo o HTML ja foi carregado
+O _"DOMContentLoaded_ funciona com **scripts internos** - Significa que todo o HTML ja foi carregado <br>
 <br>
+`<script src="script.js" defer>` - Executados na ordem de colocação. Inicializados depois de baixar o HTML. Se seus scripts dependem de outros scripts ou do DOM completamente disponível em tela <br>
+`<script src="script.js" async>` - Executados de formas aleatorias. Precisar de scripts q sejam inicializados antes. Se os seus scripts precisam rodar imediatamente, sem que dependam de outros para serem executados <br>
 <br>
-`<script src="script.js" defer>` - Executados na ordem de colocação. Inicializados depois de baixar o HTML. Se seus scripts dependem de outros scripts ou do DOM completamente disponível em tela
-`<script src="script.js" async>` - Executados de formas aleatorias. Precisar de scripts q sejam inicializados antes. Se os seus scripts precisam rodar imediatamente, sem que dependam de outros para serem executados
+http://devfuria.com.br/javascript/numeros-aleatorios/ (Numeros Aleatorios)<br>
+- `Math.floor(Math.random() * 100) + 1` - Numero aleatorio
+   - `Math.floor` - Retira a parte flutuante 
+   - `Math.random() * 10` - Gerar um numero aleatorio na casa dos inteiros
 
 #### Eventos:
 `<varName>.addEventListener('click', <callFunction>)` - Ouve o clique do mouse <br>
