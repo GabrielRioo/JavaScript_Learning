@@ -1,4 +1,6 @@
 ## Conceitos JavaScript
+- https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/A_first_splash
+
 `<varName>.addEventListener('click', <functionName>);` - Ao clicar. <br>
 `<varName>.textContent = 'Jogador 1: ' + <varName>;` - Muda o texto <br>
 `ment.createElement('p')` - Cria um novo paragrafo. <br>
