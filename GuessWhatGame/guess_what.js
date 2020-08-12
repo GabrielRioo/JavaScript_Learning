@@ -46,3 +46,38 @@ function conferirPalpite() {
     campoPalpite.value = ' ';
     campoPalpite.focus();
 }
+
+envioPalpite.addEventListener('click', conferirPalpite)
+
+function configFimDeJogo() {
+    campoPalpite.disabled = true;
+    envioPalpite.disabled = true;
+    botaoReinicio = document.createElement('button');
+    botaoReinicio.className = "reiniciar";
+    botaoReinicio.textContent = 'Novo Jogo';
+    document.body.appendChild(botaoReinicio);
+    botaoReinicio.addEventListener('click', reiniciarJogo);
+}
+
+function reiniciarJogo() {
+    contagemPalpites = 1;
+
+    // let reiniciarParas = document.querySelectorAll('.resultadoParas p');
+    // for (let i = 0; i < reiniciarParas.length; i++) {
+    //     reiniciarParas[i].textContent = '';
+    // }
+
+    botaoReinicio.parentNode.removeChild(botaoReinicio);
+
+    campoPalpite.disabled = false;
+    envioPalpite.disabled = false;
+    campoPalpite.value = '';
+    campoPalpite.focus();
+
+    palpites.textContent = '';
+    ultimoResultado.textContent = '';
+    baixoOuAlto.textContent = '';
+    ultimoResultado.style.backgroundColor = 'white';
+
+    numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+}
