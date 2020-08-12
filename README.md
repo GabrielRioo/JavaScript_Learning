@@ -1,4 +1,6 @@
 ## Conceitos JavaScript
+- https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/A_first_splash
+
 `<varName>.addEventListener('click', <functionName>);` - Ao clicar. <br>
 `<varName>.textContent = 'Jogador 1: ' + <varName>;` - Muda o texto <br>
 `ment.createElement('p')` - Cria um novo paragrafo. <br>
@@ -16,6 +18,8 @@ http://devfuria.com.br/javascript/numeros-aleatorios/ (Numeros Aleatorios)<br>
    - `Math.random() * 10` - Gerar um numero aleatorio na casa dos inteiros
 
 #### Eventos:
+`eventListener` - monitora acontecimentos <br>
+`event handlers.` - blocos de código executados em resposta ao acontecimento do evento <br>
 `<varName>.addEventListener('click', <callFunction>)` - Ouve o clique do mouse <br>
 
 Quando o codigo HTML tiver pronto, tudo q estiver dentro desse metodo, é executado. <br>
