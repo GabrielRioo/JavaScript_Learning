@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 `console.error()` <br>
 `console.warm()` <br>
 `console.info()` <br>
+`toFixed(n)` - Fixa em n casas decimais.
 ```
 function multNumbers(x, y) {
   let result = x * y;
