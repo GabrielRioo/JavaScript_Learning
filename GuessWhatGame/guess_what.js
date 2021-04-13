@@ -10,6 +10,8 @@ let envioPalpite = document.querySelector('.envioPalpite');
 let contagemPalpites = 1;
 let botaoReinicio;
 
+campoPalpite.focus();
+
 function conferirPalpite() {
     let palpiteUsuario = Number(campoPalpite.value); // Number() só para ter certeza de que o valor vai ser um numero.
 
@@ -62,10 +64,10 @@ function configFimDeJogo() {
 function reiniciarJogo() {
     contagemPalpites = 1;
 
-    // let reiniciarParas = document.querySelectorAll('.resultadoParas p');
-    // for (let i = 0; i < reiniciarParas.length; i++) {
-    //     reiniciarParas[i].textContent = '';
-    // }
+    let reiniciarParas = document.querySelectorAll('.resultadoParas p');
+    for (let i = 0; i < reiniciarParas.length; i++) {
+        reiniciarParas[i].textContent = '';
+    }
 
     botaoReinicio.parentNode.removeChild(botaoReinicio);
 
@@ -81,3 +83,5 @@ function reiniciarJogo() {
 
     numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
+
+
