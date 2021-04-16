@@ -1,13 +1,15 @@
+// Digitando no console de desenvolvedor as funções, mostra na tela.
+
 let x = 1;
 
 function a() {
     let y = 2;
-    output(z);
+    output(y);
 }
 
 function b() {
     let z = 3;
-    output(y);
+    output(z);
 }
 
 function output(value) {
