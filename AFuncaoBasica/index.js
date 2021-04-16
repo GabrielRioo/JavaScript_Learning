@@ -1,6 +1,16 @@
 var btn = document.querySelector('button');
+var input = document.querySelector('input');
+var select = document.querySelector('select');
+var message = input.value;
+var type = select.value;
+
+select.onchange = function () {
+    type = select.value;
+    message = input.value;
+}
+
 btn.onclick = function() {
-    displayMessage('Woo, this is a different message!', 'chat');
+    displayMessage(message, type);
 }
 
 function displayMessage(msgText, msgType) {
