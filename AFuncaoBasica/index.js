@@ -1,7 +1,9 @@
 var btn = document.querySelector('button');
-btn.onclick = displayMessage;
+btn.onclick = function() {
+    displayMessage('Woo, this is a different message!', 'chat');
+}
 
-function displayMessage() {
+function displayMessage(msgText, msgType) {
     var html = document.querySelector('html');
     
     // criar um elemento 'div' para uma caixa de mensagem.
@@ -10,7 +12,8 @@ function displayMessage() {
     html.appendChild(panel); //identifica onde o panel(filho) irá aparecer na pagina
     
     var msg = document.createElement('p');
-    msg.textContent = 'This is a message box';
+    msg.textContent = msgText;
+    msg.style.backgroundImage = msgType;
     panel.appendChild(msg);
     
     var closeBtn = document.createElement('button');
@@ -21,5 +24,15 @@ function displayMessage() {
     // quando clicar no 'X', vai remover a div 
     closeBtn.onclick = function() {
         panel.parentNode.removeChild(panel); //remove um elemento filho (panel)
+    }
+
+    if (msgType === 'warning') {
+        msg.style.backgroundImage = 'url(icons/warning.png)';
+        panel.style.backgroundColor = 'red';
+    } else if (msgType === 'chat') {
+        msg.style.backgroundImage = 'url(icons/chat.png)';
+        panel.style.backgroundColor = 'aqua';
+    } else {
+        msg.style.paddingLeft = '20px';
     }
 }
