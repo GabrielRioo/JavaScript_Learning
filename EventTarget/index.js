@@ -15,7 +15,7 @@ function bgChange() {
 const divs = document.querySelectorAll('div');
 
 for (let i = 0; i < divs.length; i++) {
-    divs[i].onclick = function(e) {
+    divs[i].onclick = function(e) { // muda o evento do target div
         e.target.style.backgroundColor = bgChange();
     }
 }
