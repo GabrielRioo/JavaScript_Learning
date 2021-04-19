@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: rgb(83, 83, 83);
+    height: 8em;
+    width: 20vw;
+    float: left;
+    border: 1px solid rgb(53, 53, 53);
+}
