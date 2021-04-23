@@ -42,22 +42,21 @@ function Person(first, last, age, gender, interests) {
   this.gender = gender;
   this.interests = interests;
   this.bio = function () {
-    var string = `${this.name.first} ${this.name.last} is ${this.age} years old. ${pronoun} ${this.interests[0]} and ${this.interests[1]}.`
+    var string = `${this.name.first} ${this.name.last} is ${this.age} years old.`
     var pronoun;
     console.log(pronoun);
 
     if (this.gender === "male" || this.gender === "Male" || this.gender === "m" || this.gender === "M") {
-        pronoun = "He likes ";
+        pronoun = " He likes ";
     } else if (this.gender === "female" || this.gender === "Female" || this.gender === "f" || this.gender === "F") {
-        pronoun = "She likes ";
+        pronoun = " She likes ";
     } else {
-        pronoun = "They like ";
+        pronoun = " They like ";
     }
 
+    // adiciona ao final da "string".
     string += pronoun;
 
-    console.log(pronoun);
-    console.log(string);
     if (this.interests.length === 1) {
         string += this.interests[0] + ".";
     } 
@@ -82,3 +81,10 @@ function Person(first, last, age, gender, interests) {
 };
 
 var person1 = new Person('Gabriel', 'Rio', 23, 'male', ['music', 'games', 'programming']);
+
+var person2 = new Object();
+person2.name = 'Chris';
+person2['age'] = 38;
+person2.greeting = function() {
+  alert('Hi! I\'m ' + this.name + '.');
+};
